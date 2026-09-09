@@ -1,12 +1,182 @@
+```html
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello, World!</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-      <h1 class="title">Hello World!</h1>
-      <p id="currentTime"></p>
-      <script src="script.js"></script>
-  </body>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio - Chelsen</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0b0f0c;
+            color: white;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            color: #00ff88;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00ff88;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            padding: 100px 0;
+        }
+
+        .hero small {
+            color: #888;
+            letter-spacing: 3px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin: 15px 0;
+        }
+
+        .green {
+            color: #00ff88;
+        }
+
+        .hero p {
+            color: #aaa;
+            max-width: 550px;
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 22px;
+            background: #00ff88;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 20px #00ff88;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 600px) {
+
+            nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+
+            .hero {
+                padding: 70px 0;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- NAVBAR -->
+        <nav>
+
+            <div class="logo">
+                Portfolio.
+            </div>
+
+            <div>
+                <a href="#about">About</a>
+                <a href="#skill">Skill</a>
+                <a href="#project">Project</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </nav>
+
+
+        <!-- HERO / HOME -->
+        <div class="hero">
+
+            <small>
+                HELLO, I'M CHELSEN
+            </small>
+
+            <h1>
+                Your
+                <span class="green">
+                    Developer.
+                </span>
+            </h1>
+
+            <p>
+                Saya seorang mahasiswa yang tertarik dengan
+                web development dan teknologi.
+            </p>
+
+            <a href="#project" class="button">
+                Explore Me
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
 </html>
+```
